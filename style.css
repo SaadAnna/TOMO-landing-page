@@ -1,0 +1,550 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background:rgb(255, 255, 255);
+}
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    margin-top: 30px;
+}
+header #logo {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 0.627);
+    border-radius: 100px;
+}
+header nav ul li a  {
+    display: inline-block;
+    color: #000000;
+    padding: 5px 0;
+    font-size: 18px;
+    margin: 0 20px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+#sign-up{
+    color: white;
+    background-color: #508de8;
+    text-transform: uppercase;
+    font-size: 21px;
+    transition: 0.2ms;
+    padding: 15px 25px;
+    border-radius: 70px;
+}
+#sign-up:hover{
+    background-color: #1f6de3;
+}
+#description{
+    display: block;
+    text-align:start;
+    padding: 25px;
+    background-image: url(nordwood-themes-eGHlWS-zQSM-unsplash.jpg);
+    background-position: center;
+    background-clip: content-box;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+   background-repeat: no-repeat;
+    width: 100%;
+    height:650px    ;
+     border-radius: 50px;
+     cursor: pointer;
+}
+#description h1{
+    color:  rgb(0, 0, 0);
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 150px;
+    margin-left: 30px;
+    font-weight:900;
+}
+#description h5{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#description a{
+    background-color: #508de8;
+    padding: 15px;
+    border-radius: 70px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    transition: 0.2ms;
+    position: relative;
+    top: 40px;
+    left:30px ;
+
+}
+hr{
+    width: 70%;
+    margin-left: 14%;
+    margin-top: 90px;
+}
+#features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 45px;
+}
+#features img{
+    width: 40%;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+#features h4{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: black;
+    margin-left: 25px;
+    font-weight: 900;
+}
+#features p{
+    color: gray;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#features a{
+    background-color: #508de8;
+    padding: 15px;
+    border-radius: 70px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    transition: 0.2ms;
+    position: relative;
+    top: 40px;
+    left:25px ;
+}
+#features a:hover{
+    background-color: #1f6de3;
+}
+#description a:hover{
+    background-color: #1f6de3;
+}
+#product{
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+text-align: center;
+margin-top: 40px;
+cursor: pointer;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  padding: .8em;
+  background: #f7f5f5e9;
+  position: relative;
+  overflow: visible;
+  border-radius: 5px;
+  transition: 1s;
+  cursor: pointer;
+ }
+ .card:hover{
+  transform: translateY(-20px);
+ }
+ 
+ .card img   {
+width: 70%;
+ }
+ 
+ .card-info {
+  padding-top: 10%;
+ }
+ 
+ svg {
+  width: 30px;
+  height: 30px;
+ }
+ 
+ .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.5;
+ }
+ 
+ .text-body {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+ }
+ 
+ /*Button*/
+ .card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ 
+ .card-button:hover {
+  border: 1px solid #ffffff;
+  background-color: #508de8;
+ }
+ #all-product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+ }
+ #all-product a{
+  background-color: #508de8;
+  padding: 15px;
+  border-radius: 70px;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  width: 20%;
+  color: white;
+  transition: 1s;
+  position: relative;
+  top: 40px;
+  left:30px ;
+ }
+ #all-product a:hover{
+  background-color: #1f6de3;
+  width: 40%;
+ }
+ #delivery_section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+ }
+ #delivery_section img{
+  width:35%;
+  border-radius: 5px;
+  margin-right: 25px;
+ }
+ #delivery_section div{
+  display: block;
+  margin-left: 25px;
+ }
+ #delivery_section div h1{
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+ }
+ #delivery div p{
+  color: gray;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 30px;
+  margin-top: 20px;
+ }
+ #brand_clothes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+ }
+ #brand_clothes img{
+  width: 10%;
+  cursor: pointer;
+ }
+ #fag{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 55px;
+ }
+ #fag h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+  color: black;
+  margin-top:10px;
+ }
+#people_opinion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  margin-top: 50px;
+}
+#people_opinion div{
+  width: 350px;
+  height: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 0.1px solid #e7ecee;
+  cursor: pointer;
+  transition: 0.4ms;
+  color: #1f2c33  ;
+  font-family: Inter, sans-serif;
+}
+#people_opinion div:hover{
+border :0.1px solid #6852f4 ;
+}
+#people_opinion div h1{
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+  }
+#people_opinion div p{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#authour_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+#authour_name h1{
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: gray;
+    font-weight: 100;
+    margin-top: 55px;
+}
+#authour_name h2{
+    margin-right: 15px;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: gray;
+    font-weight: 100;
+    margin-top: 55px;
+}
+#fotter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #e7ecee;
+}
+#fotter .frist{
+    display: block;
+    margin-left: 15px;
+}
+#fotter .frist h1{
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight:800;  
+}
+#fotter .frist h5{
+    color: gray;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-left: 25px;
+}
+#fotter .second{
+    display: block;
+    text-align: center;
+    margin-right: 15px ;
+}
+#fotter .second h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+#fotter .second h4{
+    color: gray;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#fotter .third{
+    display: block;
+    text-align: center;
+    margin-right: 40px ;
+}
+#fotter .third h1{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+#fotter .third h4{
+    color: gray;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+#last{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    border-top: 0.1px solid #e7ecee;
+}
+#last h1{
+    color: gray;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+
+}
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger div {
+        background: rgb(0, 0, 0);
+        margin-right: 3px;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 100px;
+        height: 100%;
+        width: 50%;
+        border-top-right-radius: 70px;
+        border-bottom-right-radius: 70px;
+        background:#508de8;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    body{
+        overflow: scroll;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        background-color: transparent;
+    }
+  #logo{
+    color: rgb(255, 255, 255);
+  }
+  #sign-up{
+    background-color: #cacaca4c;
+    color: black;
+    padding: 15px 25px;
+    border-radius: 70px;
+  }
+  #sign-up:hover{
+    background-color: #cacaca4c;
+    color: black;
+  }
+    header nav ul li a {
+        margin: 5px 0;
+        color: rgb(255, 255, 255);
+    }
+    #features{
+        display: block;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #description h1{
+        font-size: 18px;
+    }
+    #features img{
+        width: 40%;
+        margin-top:70px ;
+        text-align: center;
+        margin-left: 50px;
+    }
+    #features h4{
+        font-size: 30px;
+    }
+    #product{
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+
+
+    }
+    #product .card{
+    text-align: center;
+       margin-top: 20px;
+    }
+    #all-product a{
+        width: 40%;
+    }
+    #all-product a:hover{
+        background-color: #1f6de3;
+        width: 50%;
+       }
+       #people_opinion{
+        display: block;
+       }
+       #people_opinion{
+        margin-left: 15px;
+        margin-top: 50px;
+       }
+}
